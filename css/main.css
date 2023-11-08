@@ -26,6 +26,24 @@ body {
   line-height: 1.4;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.component img {
+  max-width: initial;
+}
+
+.component__img {
+  border: 1px solid var(--black);
+  overflow-x: auto;
+}
+
+.component__code {
+  border: 1px solid var(--black);
+}
+
 .flex {
     display: flex;
     flex-flow: row wrap;
