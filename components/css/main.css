@@ -32,12 +32,41 @@ body {
   margin-left: 10px;
 }
 
+h2 {
+  margin-top: 50px;
+}
+
 .flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: flext-start;
     width: 100%;
 }
+
+
+
+/* Main Navigation */
+
+.navbar {
+  background: var(--gray-very-light);
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 1.45rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--red);
+  padding: 0.9rem;
+}
+
 
 
 /* Preview Section */
