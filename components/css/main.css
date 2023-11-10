@@ -67,6 +67,10 @@ h2 {
   padding: 0.9rem;
 }
 
+.nav-list a:hover {
+  color: var(--black);
+}
+
 
 
 /* Preview Section */
@@ -125,6 +129,7 @@ h2 {
 .preview a:hover {
     color: var(--red) !important;
 }
+
 
 
 /* Preview Section Flat List */
