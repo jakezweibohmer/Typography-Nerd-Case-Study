@@ -38,11 +38,13 @@ h2 {
 
 .flex {
     display: flex;
-    flex-flow: row wrap;
     justify-content: flext-start;
     width: 100%;
 }
 
+.component {
+  background-color: var(--gray-light);
+}
 
 
 /* Main Navigation */
@@ -76,14 +78,15 @@ h2 {
 /* Preview Section */
 
 .preview {
-    width: 27rem;
+    width: auto;
     height: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 .red_box {
-  width: 27rem;
-  margin: 20px;
+  width: auto;
+  max-width: 450px;
+  margin: 10px;
   padding: 30px 30px 60px 30px;
   border: 2px solid var(--red);
 }
@@ -138,7 +141,9 @@ h2 {
 .flat-list {
     display: flex;
     list-style: none;
+    margin-right: 50px;
     padding-left: 0;
+    border: 1px solid var(--red);
   }
   
   .flat-list > * {
@@ -163,6 +168,7 @@ h2 {
 }
 
 .workshops_img {
-  width: 100%;
+  width: 60%;
+  object-fit: cover;
   margin: 0;
 }
