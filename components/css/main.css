@@ -143,7 +143,6 @@ h2 {
     list-style: none;
     margin-right: 50px;
     padding-left: 0;
-    border: 1px solid var(--red);
   }
   
   .flat-list > * {
@@ -171,4 +170,60 @@ h2 {
   width: 60%;
   object-fit: cover;
   margin: 0;
+}
+
+
+
+
+/* Menus Section */
+
+.menus {
+  height: auto;
+  margin-left: 50px;
+}
+
+.menus h2 {
+  font-family: var(--font-sans-serif);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 17px 0px 10px 0px;
+}
+
+.menus h3 {
+  display: inline-block;
+  font-family: var(--font-sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  vertical-align: inherit;
+  color: var(--red);
+  margin: 30px 0px 0px 0px;
+  padding: 0px 0px 2px 0px;
+}
+
+.menus-list {
+  display: block;
+  list-style: none;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 2.8em;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.menus-list a {
+  text-decoration: none;
+  vertical-align: inherit;
+  color: var(--black);
+  border-bottom: 2px solid var(--black);
+  padding-bottom: -6px;
+}
+
+.menus-list a:hover {
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: -6px;
 }
