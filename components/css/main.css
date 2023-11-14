@@ -32,6 +32,15 @@ body {
   margin-left: 10px;
 }
 
+h1 {
+  font-family: var(--font-serif);
+  font-size: 6em;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 20px 30px;
+}
+
 h2 {
   margin-top: 50px;
 }
@@ -71,6 +80,25 @@ h2 {
 
 .nav-list a:hover {
   color: var(--black);
+}
+
+
+
+/* Hero Section */
+
+.hero {
+
+}
+
+.hero a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.block-red {
+  background-color: var(--red);
+  width: 1000px;
+  margin: 40px;
 }
 
 
