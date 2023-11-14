@@ -38,11 +38,18 @@ h1 {
   line-height: 1em;
   letter-spacing: 0.05em;
   color: white;
-  padding: 20px 30px;
+  padding: 20px 0 0 30px;
 }
 
 h2 {
   margin-top: 50px;
+}
+
+h3 {
+  font-family: var(--font-sans-serif);
+  font-size: 1.4em;
+  font-weight: 400;
+  padding: 0 30px;
 }
 
 .flex {
@@ -87,7 +94,7 @@ h2 {
 /* Hero Section */
 
 .hero {
-
+  
 }
 
 .hero a {
@@ -99,8 +106,26 @@ h2 {
   background-color: var(--red);
   width: 1000px;
   margin: 40px;
+  position: relative;
 }
 
+.hero_img {
+  width: 55%;
+  object-fit: cover;
+  margin: 0;
+  vertical-align: bottom;
+  bottom: 0px;
+  position: absolute;
+
+  right: -275px;
+}
+
+.black-arrow {
+  width: 48px;
+  margin-top: 8px;
+  margin-left: 30px;
+  background: none;
+}
 
 
 /* Preview Section */
