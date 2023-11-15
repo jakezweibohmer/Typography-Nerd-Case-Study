@@ -29,7 +29,7 @@ html {
 body {
   font-family: var(--font-sans-serif);
   line-height: 1.4;
-  margin-left: 10px;
+  margin-left: 150px;
 }
 
 h1 {
@@ -54,6 +54,7 @@ h2 {
 
 .component {
   background-color: var(--gray-light);
+  margin-top: 50px;
 }
 
 
@@ -312,4 +313,80 @@ footer {
   border: 2px solid var(--red);
   padding: 0px 7px;
   vertical-align: center;
+}
+
+
+
+
+/* Side Navigation Flyout */
+
+.alt_nav {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100px;
+  height:100%;
+  background:var(--gray-light);
+  z-index:2;
+}
+
+.alt_nav span {
+  display:block;
+  font-weight:600;
+  text-transform:uppercase;
+  margin-top:10px;
+}
+
+.alt_nav i.fa {
+  font-size:3rem;
+}
+
+.alt_nav .alt_nav-item {
+  position:relative;
+  width:100%;
+  text-align:center;
+}
+
+.sub-item {
+  color: white;
+  font-family: var(--font-sans-serif);
+  font-size: 8em;
+  padding:15px 0px;
+  background:var(--red);
+}
+
+.main-item {
+  color: var(--red);
+  font-family: var(--font-sans-serif);
+  font-size: 30px;
+  padding:15px 0px;
+  background:var(--gray-light);
+}
+
+.alt_nav .alt_nav-item .sub-items {
+  position:absolute;
+  top:0px;
+  left:-800px;
+  width:max-content;
+  z-index:-1;
+  transition:all 300ms ease-in-out;
+}
+
+.alt_nav .sub-items .sub-item {
+  float:left;
+  width:800px;
+  height: 700px;
+}
+
+.alt_nav .sub-item:hover {
+  background: var(--red);
+  cursor:pointer;
+}
+
+.alt_nav .main-item:hover{
+  cursor:pointer;
+}
+
+.alt_nav .alt_nav-item:hover .sub-items {
+  left:102px;
 }
