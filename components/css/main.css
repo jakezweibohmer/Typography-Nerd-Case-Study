@@ -325,6 +325,10 @@ footer {
 
 /* Side Navigation Flyout */
 
+.hamburger {
+  width: 1em;
+}
+
 .alt_nav {
   position: fixed;
   top: 0px;
@@ -341,10 +345,6 @@ footer {
   margin-top: 10px;
 }
 
-.fa {
-  font-size: 2em;
-}
-
 .alt_nav .alt_nav-item {
   position: relative;
   width: 100%;
@@ -355,7 +355,6 @@ footer {
   font-family: var(--font-sans-serif);
   font-size: 30px;
   padding: 15px 0px;
-  background: var(--gray-light);
   text-align: center;
 }
 
@@ -413,7 +412,7 @@ footer {
   position: absolute;
   top: 0px;
   left: -1800px;
-  width:max-content;
+  width: max-content;
   z-index: -1;
   transition: all 300ms ease-in-out;
 }
