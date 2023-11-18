@@ -42,7 +42,6 @@ h1 {
 }
 
 h2 {
-  margin-top: 50px;
 }
 
 h5 {
@@ -329,13 +328,22 @@ footer {
   width: 1em;
 }
 
+.side-text {
+  color: var(--black);
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  float: left;
+  margin: 20px 60px;
+  vertical-align: center;
+}
+
 .alt_nav {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100px;
   height: 100%;
-  background: var(--gray-light);
   z-index: 2;
 }
 
@@ -356,9 +364,6 @@ footer {
   font-size: 30px;
   padding: 15px 0px;
   text-align: center;
-}
-
-.sub-items {
 }
 
 .flyout_menu-list {
@@ -434,4 +439,16 @@ footer {
 
 .alt_nav .alt_nav-item:hover .sub-items {
   left: 102px;
+}
+
+.flat-list__side-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  transform: rotate(-90deg);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 70%;
 }
