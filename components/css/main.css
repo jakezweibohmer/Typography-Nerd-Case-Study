@@ -328,16 +328,6 @@ footer {
   width: 1em;
 }
 
-.side-text {
-  color: var(--black);
-  font-size: 0.9rem;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  float: left;
-  margin: 20px 60px;
-  vertical-align: center;
-}
-
 .alt_nav {
   position: fixed;
   top: 0px;
@@ -451,4 +441,34 @@ footer {
   left: 0px;
   width: 100px;
   height: 70%;
+}
+
+.flat-list__side-nav p {
+  color: var(--black);
+  width: 100%;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  float: left;
+  margin: 20px 60px;
+  vertical-align: center;
+}
+
+
+
+
+/* Upper-right Corner Graphic */
+
+.corner-graphic {
+  display: flex;
+  list-style: none;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  width: 200px;
+  height: 100%;
+}
+
+.corner-graphic img {
+  width: 70%;
 }
