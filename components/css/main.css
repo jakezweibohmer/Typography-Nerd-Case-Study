@@ -53,7 +53,7 @@ h5 {
 
 .flex {
     display: flex;
-    justify-content: flext-start;
+    justify-content: start;
     width: 100%;
 }
 
@@ -277,13 +277,13 @@ h5 {
   vertical-align: inherit;
   color: var(--black);
   border-bottom: 2px solid var(--black);
-  padding-bottom: -6px;
+  padding-bottom: 0px;
 }
 
 .menus-list a:hover {
   color: var(--red);
   border-bottom: 2px solid var(--red);
-  padding-bottom: -6px;
+  padding-bottom: 0px;
 }
 
 
