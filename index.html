@@ -2,51 +2,401 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Preview Organism</title>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@500;600&display=swap" rel="stylesheet">        
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Web Components</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">        
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 
     </head>
     <body>
-        <div class="flat-list">
+        <h5>Web Components</h5>
 
-            <article class="preview">
-                <a href="#!"><img src="images/teaser_schrift-erklaert.svg" alt="graphic of an arrow pointing to the letter A"></a>
-                <a href="#!">
-                        <h3>typography</h3>
-                        <h2>Scripture explains</h2>
-                        <p>The Anatomy of Writing — What is an arm, what is a foot or the stomach? How to describe fonts and show them off to friends and colleagues.</p>
-                    <div class="red-arrow">
-                        <img src="images/arrow-red.svg" alt="red arrow">
-                    </div>
-                </a>
-            </article>
+        <h2>Typography Defaults</h2>
 
-            <article class="preview">
-                <a href="#!"><img src="images/teaser_indesign_opentype.svg" alt="graphic of the Open Typeface OTF and ID for InDesign"></a>
-                <a href="#!">
-                        <h3>practice</h3>
-                        <h2>Possibilities with OpenType</h2>
-                        <p>Get to know the typographic possibilities of OpenType</p>
-                    <div class="red-arrow">
-                        <img src="images/arrow-red.svg" alt="red arrow">
-                    </div>
-                </a>
-            </article>
+        <article class="component">
 
-            <article class="preview">
-                <a href="#!"><img src="images/teaser_must-haves-fuer-nerds.svg" alt="image description"></a>
-                <a href="#!">
-                        <h3>gadgets</h3>
-                        <h2>Must-haves for nerds</h2>
-                        <p>You simply have to have these: typographic gadgets that make the nerd's heart happy</p>
-                    <div class="red-arrow">
-                        <img src="images/arrow-red.svg" alt="red arrow">
+            <h3 class="component__name">Body</h3>
+            <div class="component__img">
+                <img srcset="img/3up_text-block.png 2x" src="img/3up_text-block.png" alt="body copy and leadin">
+            </div>
+
+            <div class="component__code" >
+                <article class="preview">
+                    <a href="#!">
+                            <h3>typography</h3>
+                            <h2>Scripture explains</h2>
+                            <p>The Anatomy of Writing — What is an arm, what is a foot or the stomach? How to describe fonts and show them off to friends and colleagues.</p>
+
+                            <img class="red-arrow" src="img/arrow-red.svg" alt="red arrow">
+                    </a>
+                </article>
+            </div>
+        </article>
+
+        <h2>Large Red Boxed Section with Secondary Font</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Hero Section</h3>
+            <div class="component__img">
+                <img srcset="img/Hero-section2.png 2x" src="img/Hero-section2.png" alt="Red Hero Section">
+            </div>
+
+                <div class="flat-list">
+
+                        <article class="hero">
+                            <div class="block-red">
+                            <a href="#!">
+                                <h1>Typographical knowledge for <br>
+                                    the quick</h1>
+                            
+                                <h3>Typography - What is the difference between Italic and <br>
+                                    Oblique? And what's behind the idiot apostrophe - what <br>
+                                    everyone is always talking about? This overview of statements <br>
+                                    and technical terms leaves no gaps in our knowledge.</h3>
+                            
+                                <img class="black-arrow" src="../images/arrow-black.svg" alt="black arrow">
+                            </a>
+                            <img class="hero_img" src="../images/slider_typowissen-kompakt.png" alt="fast food containers with type elements">
+                        </div>
+                        </article>
+            
+
+                </div>
+        </article>
+
+        <h2>Side Navigation</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Side Nav - visible on left side of screen</h3>
+            <div class="component__img">
+                <img srcset="img/side-menu__flyout.png 2x" src="img/side-menu__flyout.png" alt="Side Navigation Flyout">
+            </div>
+            <div class="component__img">
+                <img srcset="img/side-menu.png 2x" src="img/side-menu.png" alt="Side Navigation Flyout">
+            </div>
+
+                <div class="side-nav">
+
+                    <div class="alt_nav">
+                        <div class="alt_nav-item">
+                          <div class="main-item">
+                            <i></i>
+                            <span><img class="hamburger" src="img/menu_FILL0.svg" alt="menu icon"></span>
+                          </div>
+                          <div class="sub-items">
+                                <div class="sub-item">
+                                    <i></i>
+                                    <ul class="flyout_menu-list">
+                                        <li><a href="#!">typography</a></li>
+                                        <li><a href="#!">Fonts</a></li>
+                                        <li><a href="#!">Practice</a></li>
+                                        <li><a href="#!">magazine</a></li>
+                                        <li><a href="#!">feat.</a></li>
+                                        <li><a href="#!">quiz</a></li>
+                                    </ul>
+                                    <ul class="list_small">
+                                        <li><a href="#!">Search</a></li>
+                                        <li><a href="#!">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </article>
-          </div> <!-- preview flat-list div -->
+                </div>
+
+                <div class="flat-list__side-nav">
+                    <a href="#top">
+                        <img class="red-arrow" src="img/arrow-red.svg" alt="red arrow">
+                    </a>
+                        <div>
+                            <p>TYPOGRAPHY NERD</p>
+                        </div>
+                </div>
+        </article>
+
+        <h2>Type Nerd Graphic Box</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Type Nerd Graphic Box - upper right corner</h3>
+            <div class="component__img">
+                <img srcset="img/corner-graphic.png 2x" src="img/corner-graphic.png" alt="Type Nerd upper-right corner graphic">
+            </div>
+
+                <div class="corner-graphic">
+
+                        <a href="#top">
+                            <img src="img/corner-graphic.png" alt="Type Nerd upper-right corner graphic">
+                        </a>
+
+                    </div>
+        </article>
+
+
+        <h2>Preview Section Text and Images</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Preview Section</h3>
+            <div class="component__img">
+                <img srcset="img/3up_section.png 2x" src="img/3up_section.png" alt="body copy and leadin">
+                <div class="flat-list">
+
+                    <article class="preview">
+                        <a href="#!"><img src="img/teaser_schrift-erklaert.svg" alt="graphic of an arrow pointing to the letter A"></a>
+                        <a href="#!">
+                                <h3>typography</h3>
+                                <h2>Scripture explains</h2>
+                                <p>The Anatomy of Writing — What is an arm, what is a foot or the stomach? How to describe fonts and show them off to friends and colleagues.</p>
+                            <div class="red-arrow">
+                                <img src="img/arrow-red.svg" alt="red arrow">
+                            </div>
+                        </a>
+                    </article>
+        
+                    <article class="preview">
+                        <a href="#!"><img src="img/teaser_indesign_opentype.svg" alt="graphic of the Open Typeface OTF and ID for InDesign"></a>
+                        <a href="#!">
+                                <h3>Practice</h3>
+                                <h2>Possibilities with OpenType</h2>
+                                <p>Get to know the typographic possibilities of OpenType</p>
+                            <div class="red-arrow">
+                                <img src="img/arrow-red.svg" alt="red arrow">
+                            </div>
+                        </a>
+                    </article>
+        
+                    <article class="preview">
+                        <a href="#!"><img src="img/teaser_must-haves-fuer-nerds.svg" alt="bitmap heart"></a>
+                        <a href="#!">
+                                <h3>Gadgets</h3>
+                                <h2>Must-haves for nerds</h2>
+                                <p>You simply have to have these: typographic gadgets that make the nerd's heart happy</p>
+                            <div class="red-arrow">
+                                <img src="img/arrow-red.svg" alt="red arrow">
+                            </div>
+                        </a>
+                    </article>
+                  </div>
+            </div>
+        </article>
+
+        <h2>Main Navigation</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Navigation</h3>
+            <div class="component__img">
+                <img srcset="img/nav-list.png 2x" src="img/nav-list.png" alt="main navigation">
+            </div>
+
+            <div class="component__code" >
+                <header class="navbar" id="top">
+                    <div>                      
+                        <nav>
+                            <ul class="nav-list">
+                            <li><a href="#!">typography</a></li>
+                            <li><a href="#!">Fonts</a></li>
+                            <li><a href="#!">Practice</a></li>
+                            <li><a href="#!">magazine</a></li>
+                            <li><a href="#!">feat.</a></li>
+                            <li><a href="#!">quiz</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+        </article>
+
+        <h2>Boxed Typography</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Boxed Text</h3>
+            <div class="component__img">
+                <img srcset="img/section_framed-text-block.png 2x" src="img/section_framed-text-block.png" alt="boxed body copy and leadin">
+            </div>
+
+            <div class="component__code" >
+                <article class="preview">
+                    <div class="red_box">
+                    <a href="#!">
+                        <h3>InDesign workshops</h3>
+                        <h2>Step-by-step instructions for all practitioners</h2>
+                    </a>
+                        <p>Lots of typography workshops for the InDesign and Illustrator programs. Everything from the ligature function to the best hyphenation settings is explained here.</p>
+                    <a href="#!">
+                        <img class="red-arrow" src="img/arrow-red.svg" alt="red arrow">
+                    </a>
+                </div>
+                </article>
+            </div>
+        </article>
+
+        <h2>Boxed Typography with Image</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Workshop Section</h3>
+            <div class="component__img">
+                <img srcset="img/workshops-section.png 2x" src="img/workshops-section.png" alt="body copy and leadin">
+            </div>
+
+                <div class="flat-list">
+
+                    <section class="workshops">
+                        <article class="preview">
+                            <div class="red_box">
+                            <a href="#!">
+                                <h3>InDesign workshops</h3>
+                                <h2>Step-by-step instructions for all practitioners</h2>
+                            </a>
+                                <p>Lots of typography workshops for the InDesign and Illustrator programs. Everything from the ligature function to the best hyphenation settings is explained here.</p>
+                            <a href="#!">
+                                <img class="red-arrow" src="img/arrow-red.svg" alt="red arrow">
+                            </a>
+                        </div>
+                        </article>
+            
+                            <img class="workshops_img" src="img/start_praxis.png" alt="overhead view of laptop on designer's lap">
+                    </section>
+                </div>
+
+                <div class="flat-list">
+
+                    <section class="workshops">
+                            <img class="workshops_img" src="img/start_typowissen-kompakt.png" alt="fast food tray with typographic elements">
+
+                        <article class="preview">
+                            <div class="red_box">
+                            <a href="#!">
+                                <h3>Compact typographic knowledge</h3>
+                                <h2>Fast food for typography nerds</h2>
+                            </a>
+                                <p>Quick and easy to digest: compact typographic knowledge for all smart people and know-it-alls.</p>
+                            <a href="#!">
+                                <img class="red-arrow" src="img/arrow-red.svg" alt="red arrow">
+                            </a>
+                        </div>
+                        </article>
+            
+                    </section>
+            </div>
+        </article>
+
+        <h2>Menus section</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Menus</h3>
+            <div class="component__img">
+                <img srcset="img/menus-section.png 2x" src="img/menus-section.png" alt="body copy and leadin">
+            </div>
+
+                <div class="flat-list">
+
+                        <article class="menus">
+                                <h3>TYPOGRAPHY</h3>
+                            <ul class="menus-list">
+                                <li><a href="#!">quotation marks</a></li>
+                                <li><a href="#!">Scripture explains</a></li>
+                                <li><a href="#!">Fractions</a></li>
+                                <li><a href="#!">degrees and Celsius</a></li>
+                                <li><a href="#!">Superscript and subscript digits</a></li>
+                                <li><a href="#!">Horizontal strokes</a></li>
+                                <li><a href="#!">Ligatures</a></li>
+                                <li><a href="#!">Painting sign</a></li>
+                                <li><a href="#!">Shoemaker's boy and whore's child</a></li>
+                                <li><a href="#!">Underline more beautifully</a></li>
+                                <li><a href="#!">Price typography</a></li>
+                                <li><a href="#!">Business card typography</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="menus">
+                                <h3>FONTS</h3>
+                            <ul class="menus-list">
+                                <li><a href="#!">The best free fonts</a></li>
+                                <li><a href="#!">Fonts in focus</a></li>
+                                <li><a href="#!">Foundry directory</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="menus">
+                                <h3>PRACTICE</h3>
+                            <ul class="menus-list">
+                                <li><a href="#!">Spacing within the paragraph</a></li>
+                                <li><a href="#!">Arrangement in the text frame</a></li>
+                                <li><a href="#!">Enumeration and numbering</a></li>
+                                <li><a href="#!">Automatic resizing of text frames</a></li>
+                                <li><a href="#!">Harmonious justification</a></li>
+                                <li><a href="#!">Create fractions correctly</a></li>
+                                <li><a href="#!">Insert initials perfectly</a></li>
+                                <li><a href="#!">Empty spaces for every purpose</a></li>
+                                <li><a href="#!">Possibiities with OpenType</a></li>
+                                <li><a href="#!">Change placeholder text</a></li>
+                                <li><a href="#!">Quick help: spelling</a></li>
+                                <li><a href="#!">Font effects</a></li>
+                                <li><a href="#!">Adjust hyphenation</a></li>
+                                <li><a href="#!">Typographic presets</a></li>
+                                <li><a href="#!">Wrapping options</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="menus">
+                                <h3>MAGAZINE</h3>
+                            <ul class="menus-list">
+                                <li><a href="#!">Brand names and their meaning</a></li>
+                                <li><a href="#!">Fonts on TV</a></li>
+                                <li><a href="#!">Must-haves for nerds</a></li>
+                                <li><a href="#!">Organize and manage fonts</a></li>
+                                <li><a href="#!">Track down and discover fonts</a></li>
+                                <li><a href="#!">Design fonts</a></li>
+                                <li><a href="#!">Rent fonts</a></li>
+                            </ul>
+                        </article>
+
+                        <article class="menus">
+                                <h3>INTERNAL</h3>
+                            <ul class="menus-list">
+                                <li><a href="#!">Search</a></li>
+                                <li><a href="#!">Contact</a></li>
+                                <li><a href="#!">philosophy</a></li>
+                                <li><a href="#!">Facebook</a></li>
+                                <li><a href="#!">Instagram</a></li>
+                                <li><a href="#!">Twitter</a></li>
+                                <li><a href="#!">Data protection</a></li>
+                                <li><a href="#!">imprint</a></li>
+                            </ul>
+                        </article>
+                </div>
+
+
+        </article>
+
+        <h2>Footer Section</h2>
+
+        <article class="component">
+
+            <h3 class="component__name">Footer</h3>
+            <div class="component__img">
+                <img srcset="img/footer.png 2x" src="img/footer.png" alt="footer section with copyright">
+            </div>
+
+                <div class="footer">
+
+                    <div class="copyright">
+                        <p>&copy; 2010-2023 BY TYPOGRAPHY NERD - ULTIMATE PASSION</p>
+                    </div>
+                    <div class="guaranteed">
+                        <p>GUARANTEED INDEPENDENT</p>
+                    </div>
+
+                </div>
+        </article>
 
 
 
