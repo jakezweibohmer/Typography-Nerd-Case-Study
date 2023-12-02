@@ -29,8 +29,11 @@ html {
 body {
   font-family: var(--font-sans-serif);
   line-height: 1.4;
-  margin-left: 150px;
   background-color: var(--gray-light);
+  border-top: 20px solid white;
+  border-right: 20px solid white;
+  border-bottom: 20px solid white;
+  border-left: 60px solid white;
 }
 
 h1 {
@@ -67,7 +70,8 @@ h5 {
 
 .navbar {
   background: var(--gray-light);
-  margin-top: 140px;
+  margin-top: 120px;
+  margin-left: 1.7em;
 }
 
 .nav-list {
@@ -94,6 +98,10 @@ h5 {
 
 /* Side Navigation Flyout */
 
+.side-nav {
+  background-color: white;
+}
+
 .hamburger {
   width: 1em;
   margin-top: 130px;
@@ -103,7 +111,7 @@ h5 {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100px;
+  width: 60px;
   height: 100%;
   z-index: 2;
 }
@@ -208,10 +216,10 @@ h5 {
   align-items: center;
   transform: rotate(-90deg);
   position: fixed;
-  top: 0px;
+  top: 350px;
   left: 0px;
-  width: 100px;
-  height: 100%;
+  width: 60px;
+  height: 220px;
 }
 
 .flat-list__side-nav p {
@@ -228,6 +236,10 @@ h5 {
 
 
 /* Hero Section */
+
+.hero {
+  margin-left: 2.7em;
+}
 
 .hero h3 {
   font-family: var(--font-sans-serif);
@@ -276,7 +288,7 @@ h5 {
 .preview {
     width: auto;
     height: auto;
-    margin: 50px 10px;
+    margin: 50px 10px 50px 2.7em;
 }
 
 .red_box {
@@ -376,6 +388,13 @@ h5 {
 
 /* Menus Section */
 
+.menus__flat-list {
+  display: flex;
+  margin-right: 50px;
+  background-color: white;
+  width: 100%;
+ }
+
 .menus {
   height: auto;
   margin-left: 50px;
@@ -432,9 +451,10 @@ h5 {
 
 /* Footer Section */
 
-footer {
+.footer {
   display: flex;
   padding: 0;
+  background-color: white;
  }
 
 .copyright {
@@ -466,13 +486,13 @@ footer {
 /* Upper-right Corner Graphic */
 
 .corner-graphic {
-  display: flex;
   list-style: none;
-  position: fixed;
+  position: absolute;
   top: 50px;
   right: 0px;
   width: 200px;
   height: 100%;
+  z-index: 1;
 }
 
 .corner-graphic img {
